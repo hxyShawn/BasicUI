@@ -8,9 +8,10 @@
 
 #import "ViewController.h"
 #import <Masonry.h>
-#import "HXYMyTableViewCell.h"
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property (nonatomic, strong) NSArray *dataArray;
+#import "HXYMyInfoView.h"
+#import "drawCurve.h"
+@interface ViewController ()
+
 @end
 
 @implementation ViewController
@@ -19,39 +20,24 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.dataArray = @[@[@"section0 row0",@"section0 row1",@"section0 row2"],
-                       @[@"section1 row0",@"section1 row1",@"section1 row2",@"section1 row3"],
-                       @[@"section2 row0",@"section2 row1",@"section2 row2"]];
+//    HXYMyInfoView *view = [[HXYMyInfoView alloc]init];
+//    [self.view addSubview:view];
+//    view.backgroundColor = [UIColor greenColor];
+//    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.top.right.mas_equalTo(self.view);
+//        make.height.mas_equalTo(self.view.mas_height).multipliedBy(0.5);
+//    }];
     
-    UITableView *tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
-    tableView.delegate = self;
-    tableView.dataSource = self;
-    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [self.view addSubview:tableView];
-    [tableView registerClass:[HXYMyTableViewCell class] forCellReuseIdentifier:@"cell"];
+    drawCurve *drawCurveView = [[drawCurve alloc]init];
+    [self.view addSubview:drawCurveView];
+    drawCurveView.backgroundColor = [UIColor greenColor];
+    [drawCurveView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.right.mas_equalTo(self.view);
+        make.height.mas_equalTo(self.view.mas_height).multipliedBy(0.5);
+    }];
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return self.dataArray.count;
-}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    NSArray *array = self.dataArray[section];
-    return array.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    HXYMyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    return cell;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 40;
-}
 
 
 - (void)didReceiveMemoryWarning {

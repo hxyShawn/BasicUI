@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9FAD8FCE7DCE896B9328AE71 /* libPods-textAll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6999D28ABEBBA574FBA531 /* libPods-textAll.a */; };
+		DC1F66581EE03BA100B2DA20 /* HxyTestCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1F66571EE03BA100B2DA20 /* HxyTestCellViewController.m */; };
+		DC1F665B1EE03BEB00B2DA20 /* HXYMyInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1F665A1EE03BEB00B2DA20 /* HXYMyInfoView.m */; };
+		DC1F66611EE0408C00B2DA20 /* drawCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1F66601EE0408C00B2DA20 /* drawCurve.m */; };
 		DCFDE64D1ED9CACB0006DCFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDE64C1ED9CACB0006DCFE /* main.m */; };
 		DCFDE6501ED9CACB0006DCFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDE64F1ED9CACB0006DCFE /* AppDelegate.m */; };
 		DCFDE6531ED9CACB0006DCFE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDE6521ED9CACB0006DCFE /* ViewController.m */; };
@@ -21,6 +24,12 @@
 		1C30AEBB22BFDC2BDFE7C21E /* Pods-textAll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-textAll.debug.xcconfig"; path = "Pods/Target Support Files/Pods-textAll/Pods-textAll.debug.xcconfig"; sourceTree = "<group>"; };
 		365083BED8CD77AFA88AE881 /* Pods-textAll.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-textAll.release.xcconfig"; path = "Pods/Target Support Files/Pods-textAll/Pods-textAll.release.xcconfig"; sourceTree = "<group>"; };
 		4D6999D28ABEBBA574FBA531 /* libPods-textAll.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-textAll.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC1F66561EE03BA100B2DA20 /* HxyTestCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HxyTestCellViewController.h; sourceTree = "<group>"; };
+		DC1F66571EE03BA100B2DA20 /* HxyTestCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HxyTestCellViewController.m; sourceTree = "<group>"; };
+		DC1F66591EE03BEB00B2DA20 /* HXYMyInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXYMyInfoView.h; sourceTree = "<group>"; };
+		DC1F665A1EE03BEB00B2DA20 /* HXYMyInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXYMyInfoView.m; sourceTree = "<group>"; };
+		DC1F665F1EE0408C00B2DA20 /* drawCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawCurve.h; sourceTree = "<group>"; };
+		DC1F66601EE0408C00B2DA20 /* drawCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = drawCurve.m; sourceTree = "<group>"; };
 		DCFDE6481ED9CACB0006DCFE /* textAll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = textAll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFDE64C1ED9CACB0006DCFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCFDE64E1ED9CACB0006DCFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,8 +98,14 @@
 				DCFDE6631ED9CF8D0006DCFE /* HXYMyTableViewCell.m */,
 				DCFDE64E1ED9CACB0006DCFE /* AppDelegate.h */,
 				DCFDE64F1ED9CACB0006DCFE /* AppDelegate.m */,
+				DC1F66561EE03BA100B2DA20 /* HxyTestCellViewController.h */,
+				DC1F66571EE03BA100B2DA20 /* HxyTestCellViewController.m */,
 				DCFDE6511ED9CACB0006DCFE /* ViewController.h */,
 				DCFDE6521ED9CACB0006DCFE /* ViewController.m */,
+				DC1F665F1EE0408C00B2DA20 /* drawCurve.h */,
+				DC1F66601EE0408C00B2DA20 /* drawCurve.m */,
+				DC1F66591EE03BEB00B2DA20 /* HXYMyInfoView.h */,
+				DC1F665A1EE03BEB00B2DA20 /* HXYMyInfoView.m */,
 				DCFDE6541ED9CACB0006DCFE /* Main.storyboard */,
 				DCFDE6571ED9CACB0006DCFE /* Assets.xcassets */,
 				DCFDE6591ED9CACB0006DCFE /* LaunchScreen.storyboard */,
@@ -230,9 +245,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1F665B1EE03BEB00B2DA20 /* HXYMyInfoView.m in Sources */,
+				DC1F66611EE0408C00B2DA20 /* drawCurve.m in Sources */,
 				DCFDE6531ED9CACB0006DCFE /* ViewController.m in Sources */,
 				DCFDE6641ED9CF8D0006DCFE /* HXYMyTableViewCell.m in Sources */,
 				DCFDE6501ED9CACB0006DCFE /* AppDelegate.m in Sources */,
+				DC1F66581EE03BA100B2DA20 /* HxyTestCellViewController.m in Sources */,
 				DCFDE64D1ED9CACB0006DCFE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
