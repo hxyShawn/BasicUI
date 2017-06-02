@@ -40,15 +40,13 @@
      */
     
         
-        CGFloat A = 8;
+        CGFloat A = 20;
         
-        CGFloat K = 80;
+        CGFloat K = 100;
         
-        CGFloat u = M_PI*3/8.0f;
+        CGFloat u = 120;
         
-        CGFloat offsetX = 0.03;
-        
-        CGFloat w = M_PI/180;
+        CGFloat w = M_PI/120;
         
     CAShapeLayer *waveLayer = [[CAShapeLayer alloc]init];
     CGMutablePathRef path = CGPathCreateMutable();
