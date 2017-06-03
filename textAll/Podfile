@@ -8,5 +8,5 @@ target 'textAll' do
   # Pods for textAll
 pod 'Masonry'
 pod 'TTTAttributedLabel'
-pod 'Reveal-SDK', :configurations => ['Debug']
+pod 'Reveal-SDK', '~> 7', :configurations => ['Debug']
 end

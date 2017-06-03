@@ -33,8 +33,8 @@
 
     for (int i =0; i<5; i++) {
         HXYCustomButton *button = [[HXYCustomButton alloc]init];
-        button.image = [UIImage imageNamed:selectedImgName];
-        button.text = self.titleArray[i];
+//        button.image = [UIImage imageNamed:selectedImgName];
+//        button.text = self.titleArray[i];
         button.selected = YES;
         button.tag = i;
         [button addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -73,7 +73,7 @@
         if (button.tag <= btn.tag) {
             button.selected = YES;
         }
-        button.image = button.selected? [UIImage imageNamed:selectedImgName]:[UIImage imageNamed:unSelectedImgName];
+//        button.image = button.selected? [UIImage imageNamed:selectedImgName]:[UIImage imageNamed:unSelectedImgName];
     }
 
 }

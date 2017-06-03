@@ -1,18 +1,18 @@
 PODS:
   - Masonry (1.0.2)
-  - Reveal-SDK (8)
+  - Reveal-SDK (7)
   - TTTAttributedLabel (2.0.0)
 
 DEPENDENCIES:
   - Masonry
-  - Reveal-SDK
+  - Reveal-SDK (~> 7)
   - TTTAttributedLabel
 
 SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  Reveal-SDK: 43be4e662864e937960d0d04d005135e29c4e53b
+  Reveal-SDK: 564657bc66c93d2718b1c0121cdebe99d354ddab
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
 
-PODFILE CHECKSUM: f7596409eb87d7f6ea05fe79c0b38916a35d45a9
+PODFILE CHECKSUM: 283f48a4d9f5fb6ba7d26bee8031d8edf154103c
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.1.1
