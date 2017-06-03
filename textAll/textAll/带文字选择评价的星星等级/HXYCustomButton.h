@@ -18,14 +18,14 @@ typedef NS_ENUM(NSUInteger, HXYCustomButtonDirectionType) {
 
  @param directionType directionType 横向还是纵向
  @param imageSize imageSize 图片的size,可以不传,不传默认20,20
- @param space 图片按钮之间的间距
+ @param space 图片按钮之间的间距 不传默认8.f
  @return 实例
  */
 - (instancetype)initWithType:(HXYCustomButtonDirectionType )directionType imageSize:(CGSize)imageSize space:(NSNumber *)space;
 
 @property (nonatomic, assign) HXYCustomButtonDirectionType  buttonDirectionType;
 
-//控件
+/*控件,似乎不应该写出来的样子*/
 @property (nonatomic, strong) UIImageView *imgv;
 @property (nonatomic, strong) UILabel *label;
 
@@ -34,6 +34,7 @@ typedef NS_ENUM(NSUInteger, HXYCustomButtonDirectionType) {
 - (void)setTextColor:(nullable UIColor *)color forState:(UIControlState)state;
 - (void)setImageStr:(nullable NSString *)imageStr forState:(UIControlState)state;
 
+/*以下暂时没有写对应的使用,说白了就是看的*/
 /*想要将图片显示成的size*/
 @property (nonatomic, assign) CGSize imageSize;
 /** 图片和标签之间的间隙 */
