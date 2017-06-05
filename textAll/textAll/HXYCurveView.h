@@ -1,12 +1,13 @@
 //
-//  drawCurve.h
+//  HXYCurveView.h
 //  textAll
 //
-//  Created by 贺东方 on 17/6/1.
+//  Created by liangqi on 17/6/5.
 //  Copyright © 2017年 hexiaoyi. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface drawCurve : UIView
+@interface HXYCurveView : UIView
+
 @end

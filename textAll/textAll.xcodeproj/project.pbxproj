@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46BBC9AC1EE0FE7F00818DD9 /* my_info_bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BBC9AA1EE0FE7F00818DD9 /* my_info_bottom.png */; };
-		46BBC9AD1EE0FE7F00818DD9 /* my_info_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BBC9AB1EE0FE7F00818DD9 /* my_info_top.png */; };
+		46BBC9AC1EE0FE7F00818DD9 /* my_info_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BBC9AA1EE0FE7F00818DD9 /* my_info_up.png */; };
+		46BBC9AD1EE0FE7F00818DD9 /* my_info_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BBC9AB1EE0FE7F00818DD9 /* my_info_down.png */; };
 		46BBC9D21EE10FE900818DD9 /* HXYCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BBC9B41EE10FE900818DD9 /* HXYCustomButton.m */; };
 		46BBC9D31EE10FE900818DD9 /* HXYEstimateStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BBC9B61EE10FE900818DD9 /* HXYEstimateStarView.m */; };
 		46BBC9DF1EE10FE900818DD9 /* HXYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BBC9D11EE10FE900818DD9 /* HXYTextView.m */; };
@@ -16,6 +16,7 @@
 		46BBC9E61EE1104400818DD9 /* estimateSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BBC9E21EE1104400818DD9 /* estimateSelected@2x.png */; };
 		46BBC9E71EE1104400818DD9 /* estimateUnSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BBC9E31EE1104400818DD9 /* estimateUnSelected.png */; };
 		46BBC9E81EE1104400818DD9 /* estimateUnSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BBC9E41EE1104400818DD9 /* estimateUnSelected@2x.png */; };
+		46BBC9EE1EE553C600818DD9 /* HXYCurveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BBC9ED1EE553C600818DD9 /* HXYCurveView.m */; };
 		9FAD8FCE7DCE896B9328AE71 /* libPods-textAll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6999D28ABEBBA574FBA531 /* libPods-textAll.a */; };
 		DC1F66581EE03BA100B2DA20 /* HxyTestCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1F66571EE03BA100B2DA20 /* HxyTestCellViewController.m */; };
 		DC1F665B1EE03BEB00B2DA20 /* HXYMyInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1F665A1EE03BEB00B2DA20 /* HXYMyInfoView.m */; };
@@ -32,8 +33,8 @@
 /* Begin PBXFileReference section */
 		1C30AEBB22BFDC2BDFE7C21E /* Pods-textAll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-textAll.debug.xcconfig"; path = "Pods/Target Support Files/Pods-textAll/Pods-textAll.debug.xcconfig"; sourceTree = "<group>"; };
 		365083BED8CD77AFA88AE881 /* Pods-textAll.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-textAll.release.xcconfig"; path = "Pods/Target Support Files/Pods-textAll/Pods-textAll.release.xcconfig"; sourceTree = "<group>"; };
-		46BBC9AA1EE0FE7F00818DD9 /* my_info_bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = my_info_bottom.png; sourceTree = "<group>"; };
-		46BBC9AB1EE0FE7F00818DD9 /* my_info_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = my_info_top.png; sourceTree = "<group>"; };
+		46BBC9AA1EE0FE7F00818DD9 /* my_info_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = my_info_up.png; sourceTree = "<group>"; };
+		46BBC9AB1EE0FE7F00818DD9 /* my_info_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = my_info_down.png; sourceTree = "<group>"; };
 		46BBC9B31EE10FE900818DD9 /* HXYCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXYCustomButton.h; sourceTree = "<group>"; };
 		46BBC9B41EE10FE900818DD9 /* HXYCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXYCustomButton.m; sourceTree = "<group>"; };
 		46BBC9B51EE10FE900818DD9 /* HXYEstimateStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXYEstimateStarView.h; sourceTree = "<group>"; };
@@ -44,6 +45,8 @@
 		46BBC9E21EE1104400818DD9 /* estimateSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "estimateSelected@2x.png"; sourceTree = "<group>"; };
 		46BBC9E31EE1104400818DD9 /* estimateUnSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = estimateUnSelected.png; sourceTree = "<group>"; };
 		46BBC9E41EE1104400818DD9 /* estimateUnSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "estimateUnSelected@2x.png"; sourceTree = "<group>"; };
+		46BBC9EC1EE553C600818DD9 /* HXYCurveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXYCurveView.h; sourceTree = "<group>"; };
+		46BBC9ED1EE553C600818DD9 /* HXYCurveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXYCurveView.m; sourceTree = "<group>"; };
 		4D6999D28ABEBBA574FBA531 /* libPods-textAll.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-textAll.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1F66561EE03BA100B2DA20 /* HxyTestCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HxyTestCellViewController.h; sourceTree = "<group>"; };
 		DC1F66571EE03BA100B2DA20 /* HxyTestCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HxyTestCellViewController.m; sourceTree = "<group>"; };
@@ -157,12 +160,14 @@
 				DC1F66571EE03BA100B2DA20 /* HxyTestCellViewController.m */,
 				DCFDE6511ED9CACB0006DCFE /* ViewController.h */,
 				DCFDE6521ED9CACB0006DCFE /* ViewController.m */,
+				46BBC9EC1EE553C600818DD9 /* HXYCurveView.h */,
+				46BBC9ED1EE553C600818DD9 /* HXYCurveView.m */,
 				DC1F665F1EE0408C00B2DA20 /* drawCurve.h */,
 				DC1F66601EE0408C00B2DA20 /* drawCurve.m */,
 				DC1F66591EE03BEB00B2DA20 /* HXYMyInfoView.h */,
 				DC1F665A1EE03BEB00B2DA20 /* HXYMyInfoView.m */,
-				46BBC9AA1EE0FE7F00818DD9 /* my_info_bottom.png */,
-				46BBC9AB1EE0FE7F00818DD9 /* my_info_top.png */,
+				46BBC9AA1EE0FE7F00818DD9 /* my_info_up.png */,
+				46BBC9AB1EE0FE7F00818DD9 /* my_info_down.png */,
 				DCFDE6541ED9CACB0006DCFE /* Main.storyboard */,
 				DCFDE6571ED9CACB0006DCFE /* Assets.xcassets */,
 				DCFDE6591ED9CACB0006DCFE /* LaunchScreen.storyboard */,
@@ -243,10 +248,10 @@
 			files = (
 				DCFDE65B1ED9CACB0006DCFE /* LaunchScreen.storyboard in Resources */,
 				46BBC9E71EE1104400818DD9 /* estimateUnSelected.png in Resources */,
-				46BBC9AD1EE0FE7F00818DD9 /* my_info_top.png in Resources */,
+				46BBC9AD1EE0FE7F00818DD9 /* my_info_down.png in Resources */,
 				DCFDE6581ED9CACB0006DCFE /* Assets.xcassets in Resources */,
 				46BBC9E81EE1104400818DD9 /* estimateUnSelected@2x.png in Resources */,
-				46BBC9AC1EE0FE7F00818DD9 /* my_info_bottom.png in Resources */,
+				46BBC9AC1EE0FE7F00818DD9 /* my_info_up.png in Resources */,
 				46BBC9E51EE1104400818DD9 /* estimateSelected.png in Resources */,
 				46BBC9E61EE1104400818DD9 /* estimateSelected@2x.png in Resources */,
 				DCFDE6561ED9CACB0006DCFE /* Main.storyboard in Resources */,
@@ -311,6 +316,7 @@
 				DC1F665B1EE03BEB00B2DA20 /* HXYMyInfoView.m in Sources */,
 				DC1F66611EE0408C00B2DA20 /* drawCurve.m in Sources */,
 				DCFDE6531ED9CACB0006DCFE /* ViewController.m in Sources */,
+				46BBC9EE1EE553C600818DD9 /* HXYCurveView.m in Sources */,
 				46BBC9D21EE10FE900818DD9 /* HXYCustomButton.m in Sources */,
 				DCFDE6641ED9CF8D0006DCFE /* HXYMyTableViewCell.m in Sources */,
 				DCFDE6501ED9CACB0006DCFE /* AppDelegate.m in Sources */,
