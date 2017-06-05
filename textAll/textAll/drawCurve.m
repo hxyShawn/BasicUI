@@ -185,6 +185,7 @@
 
 - (void)drawRect:(CGRect)rect
 {
+    //ddd
 //    [self drawBezierPathWithRect:rect];//失败了,计算不出来controlPoint,数学!!!
     
 }
