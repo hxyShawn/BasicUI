@@ -16,11 +16,11 @@
 		46BBC9E61EE1104400818DD9 /* estimateSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BBC9E21EE1104400818DD9 /* estimateSelected@2x.png */; };
 		46BBC9E71EE1104400818DD9 /* estimateUnSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BBC9E31EE1104400818DD9 /* estimateUnSelected.png */; };
 		46BBC9E81EE1104400818DD9 /* estimateUnSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BBC9E41EE1104400818DD9 /* estimateUnSelected@2x.png */; };
-		46BBC9EE1EE553C600818DD9 /* HXYCurveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BBC9ED1EE553C600818DD9 /* HXYCurveView.m */; };
 		9FAD8FCE7DCE896B9328AE71 /* libPods-textAll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6999D28ABEBBA574FBA531 /* libPods-textAll.a */; };
 		DC1F66581EE03BA100B2DA20 /* HxyTestCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1F66571EE03BA100B2DA20 /* HxyTestCellViewController.m */; };
 		DC1F665B1EE03BEB00B2DA20 /* HXYMyInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1F665A1EE03BEB00B2DA20 /* HXYMyInfoView.m */; };
 		DC1F66611EE0408C00B2DA20 /* drawCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1F66601EE0408C00B2DA20 /* drawCurve.m */; };
+		DC33C8C61EE57CCD000858A0 /* BezierPathLearning.m in Sources */ = {isa = PBXBuildFile; fileRef = DC33C8C51EE57CCD000858A0 /* BezierPathLearning.m */; };
 		DCFDE64D1ED9CACB0006DCFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDE64C1ED9CACB0006DCFE /* main.m */; };
 		DCFDE6501ED9CACB0006DCFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDE64F1ED9CACB0006DCFE /* AppDelegate.m */; };
 		DCFDE6531ED9CACB0006DCFE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDE6521ED9CACB0006DCFE /* ViewController.m */; };
@@ -45,8 +45,6 @@
 		46BBC9E21EE1104400818DD9 /* estimateSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "estimateSelected@2x.png"; sourceTree = "<group>"; };
 		46BBC9E31EE1104400818DD9 /* estimateUnSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = estimateUnSelected.png; sourceTree = "<group>"; };
 		46BBC9E41EE1104400818DD9 /* estimateUnSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "estimateUnSelected@2x.png"; sourceTree = "<group>"; };
-		46BBC9EC1EE553C600818DD9 /* HXYCurveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXYCurveView.h; sourceTree = "<group>"; };
-		46BBC9ED1EE553C600818DD9 /* HXYCurveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXYCurveView.m; sourceTree = "<group>"; };
 		4D6999D28ABEBBA574FBA531 /* libPods-textAll.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-textAll.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1F66561EE03BA100B2DA20 /* HxyTestCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HxyTestCellViewController.h; sourceTree = "<group>"; };
 		DC1F66571EE03BA100B2DA20 /* HxyTestCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HxyTestCellViewController.m; sourceTree = "<group>"; };
@@ -54,6 +52,8 @@
 		DC1F665A1EE03BEB00B2DA20 /* HXYMyInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXYMyInfoView.m; sourceTree = "<group>"; };
 		DC1F665F1EE0408C00B2DA20 /* drawCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawCurve.h; sourceTree = "<group>"; };
 		DC1F66601EE0408C00B2DA20 /* drawCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = drawCurve.m; sourceTree = "<group>"; };
+		DC33C8C41EE57CCD000858A0 /* BezierPathLearning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathLearning.h; sourceTree = "<group>"; };
+		DC33C8C51EE57CCD000858A0 /* BezierPathLearning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathLearning.m; sourceTree = "<group>"; };
 		DCFDE6481ED9CACB0006DCFE /* textAll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = textAll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFDE64C1ED9CACB0006DCFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DCFDE64E1ED9CACB0006DCFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,12 +156,12 @@
 				DCFDE6631ED9CF8D0006DCFE /* HXYMyTableViewCell.m */,
 				DCFDE64E1ED9CACB0006DCFE /* AppDelegate.h */,
 				DCFDE64F1ED9CACB0006DCFE /* AppDelegate.m */,
+				DC33C8C41EE57CCD000858A0 /* BezierPathLearning.h */,
+				DC33C8C51EE57CCD000858A0 /* BezierPathLearning.m */,
 				DC1F66561EE03BA100B2DA20 /* HxyTestCellViewController.h */,
 				DC1F66571EE03BA100B2DA20 /* HxyTestCellViewController.m */,
 				DCFDE6511ED9CACB0006DCFE /* ViewController.h */,
 				DCFDE6521ED9CACB0006DCFE /* ViewController.m */,
-				46BBC9EC1EE553C600818DD9 /* HXYCurveView.h */,
-				46BBC9ED1EE553C600818DD9 /* HXYCurveView.m */,
 				DC1F665F1EE0408C00B2DA20 /* drawCurve.h */,
 				DC1F66601EE0408C00B2DA20 /* drawCurve.m */,
 				DC1F66591EE03BEB00B2DA20 /* HXYMyInfoView.h */,
@@ -316,8 +316,8 @@
 				DC1F665B1EE03BEB00B2DA20 /* HXYMyInfoView.m in Sources */,
 				DC1F66611EE0408C00B2DA20 /* drawCurve.m in Sources */,
 				DCFDE6531ED9CACB0006DCFE /* ViewController.m in Sources */,
-				46BBC9EE1EE553C600818DD9 /* HXYCurveView.m in Sources */,
 				46BBC9D21EE10FE900818DD9 /* HXYCustomButton.m in Sources */,
+				DC33C8C61EE57CCD000858A0 /* BezierPathLearning.m in Sources */,
 				DCFDE6641ED9CF8D0006DCFE /* HXYMyTableViewCell.m in Sources */,
 				DCFDE6501ED9CACB0006DCFE /* AppDelegate.m in Sources */,
 				DC1F66581EE03BA100B2DA20 /* HxyTestCellViewController.m in Sources */,
