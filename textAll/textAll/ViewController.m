@@ -33,13 +33,12 @@
     
     UIView *downView = [[UIView alloc]init];
     [self.view addSubview:downView];
-//    downView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"my_info_down"]];
     UIImageView *dowimgv = [[UIImageView alloc]init];
     dowimgv.image = [UIImage imageNamed:@"my_info_down"];
     [downView addSubview:dowimgv];
     [downView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.right.mas_equalTo(self.view);
-        make.height.mas_equalTo(418);
+        make.height.mas_equalTo(220);
     }];
     [dowimgv mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(downView);
