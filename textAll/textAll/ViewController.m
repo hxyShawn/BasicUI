@@ -10,7 +10,7 @@
 #import <Masonry.h>
 #import "HXYMyInfoView.h"
 #import "drawCurve.h"
-
+#import "HXYMyViewController.h"
 #import "BezierPathLearning.h"
 @interface ViewController ()
 
@@ -21,44 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-//    HXYMyInfoView *view = [[HXYMyInfoView alloc]init];
-//    [self.view addSubview:view];
-//    view.backgroundColor = [UIColor grayColor];
-//    [view mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.top.right.mas_equalTo(self.view);
-//        make.height.mas_equalTo(self.view.mas_height).multipliedBy(0.5);
-//    }];
+}
 
-
-
-//    UIView *downView = [[UIView alloc]init];
-//    [self.view addSubview:downView];
-////    downView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"my_info_down"]];
-//    UIImageView *dowimgv = [[UIImageView alloc]init];
-//    dowimgv.image = [UIImage imageNamed:@"my_info_down"];
-//    [downView addSubview:dowimgv];
-//    [downView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.top.right.mas_equalTo(self.view);
-//        make.height.mas_equalTo(418);
-//    }];
-//    [dowimgv mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.mas_equalTo(downView);
-//    }];
-//
-//    UIView *upView = [[UIView alloc]init];
-//    [downView addSubview:upView];
-//    UIImageView *imgv = [[UIImageView alloc]init];
-//    imgv.image = [UIImage imageNamed:@"my_info_up"];
-//    [upView addSubview:imgv];
-//    
-//    [upView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.left.right.mas_equalTo(downView);
-//        make.height.mas_equalTo(100);
-//    }];
-//    [imgv mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.mas_equalTo(upView);
-//    }];
+- (void)viewDidAppear:(BOOL)animated
+{
+    HXYLog();
 }
 
 - (void)bezierPathLearning
@@ -89,7 +56,10 @@
 {
     //画曲线
     //    [self drawCurveView];
-    [self bezierPathLearning];
+//    [self bezierPathLearning];
+    
+    HXYMyViewController *vc = [[HXYMyViewController alloc]init];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

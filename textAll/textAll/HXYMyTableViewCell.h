@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface HXYMyTableViewCell : UITableViewCell
-@property (nonatomic,copy) NSString *imageStr;
-@property (nonatomic,copy) NSString *text;
+@property (nonatomic, copy) NSString *headImage;
+@property (nonatomic, strong) NSString *text;
+@property (nonatomic, strong) NSString *subText;
 @end

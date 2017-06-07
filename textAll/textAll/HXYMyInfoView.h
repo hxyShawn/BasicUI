@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface HXYMyInfoView : UIView
-
+- (void)setModel;
 @end
