@@ -11,7 +11,7 @@
 		467FB8DC1EE8F0170057998A /* AlterableHeightCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FB8DB1EE8F0170057998A /* AlterableHeightCellViewController.m */; };
 		467FB8DF1EE8F0230057998A /* AlterableHeightCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FB8DE1EE8F0230057998A /* AlterableHeightCellTableViewCell.m */; };
 		467FB8E31EE902600057998A /* DynamicLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FB8E21EE902600057998A /* DynamicLabelViewController.m */; };
-		467FB8E61EE902B80057998A /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FB8E51EE902B80057998A /* AdViewController.m */; };
+		467FB8EF1EE94A5C0057998A /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FB8EE1EE94A5C0057998A /* AdViewController.m */; };
 		46BBC9D21EE10FE900818DD9 /* HXYCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BBC9B41EE10FE900818DD9 /* HXYCustomButton.m */; };
 		46BBC9D31EE10FE900818DD9 /* HXYEstimateStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BBC9B61EE10FE900818DD9 /* HXYEstimateStarView.m */; };
 		46BBC9DF1EE10FE900818DD9 /* HXYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BBC9D11EE10FE900818DD9 /* HXYTextView.m */; };
@@ -57,8 +57,8 @@
 		467FB8DE1EE8F0230057998A /* AlterableHeightCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlterableHeightCellTableViewCell.m; sourceTree = "<group>"; };
 		467FB8E11EE902600057998A /* DynamicLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicLabelViewController.h; sourceTree = "<group>"; };
 		467FB8E21EE902600057998A /* DynamicLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicLabelViewController.m; sourceTree = "<group>"; };
-		467FB8E41EE902B80057998A /* AdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdViewController.h; sourceTree = "<group>"; };
-		467FB8E51EE902B80057998A /* AdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
+		467FB8ED1EE94A5C0057998A /* AdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdViewController.h; sourceTree = "<group>"; };
+		467FB8EE1EE94A5C0057998A /* AdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
 		46BBC9B31EE10FE900818DD9 /* HXYCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXYCustomButton.h; sourceTree = "<group>"; };
 		46BBC9B41EE10FE900818DD9 /* HXYCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXYCustomButton.m; sourceTree = "<group>"; };
 		46BBC9B51EE10FE900818DD9 /* HXYEstimateStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXYEstimateStarView.h; sourceTree = "<group>"; };
@@ -137,6 +137,23 @@
 				467FB8E21EE902600057998A /* DynamicLabelViewController.m */,
 			);
 			path = "动态高度Label";
+			sourceTree = "<group>";
+		};
+		467FB8EB1EE94A5C0057998A /* masonry布局系列 */ = {
+			isa = PBXGroup;
+			children = (
+				467FB8EC1EE94A5C0057998A /* 简单的masonry布局scrollView */,
+			);
+			path = "masonry布局系列";
+			sourceTree = "<group>";
+		};
+		467FB8EC1EE94A5C0057998A /* 简单的masonry布局scrollView */ = {
+			isa = PBXGroup;
+			children = (
+				467FB8ED1EE94A5C0057998A /* AdViewController.h */,
+				467FB8EE1EE94A5C0057998A /* AdViewController.m */,
+			);
+			path = "简单的masonry布局scrollView";
 			sourceTree = "<group>";
 		};
 		46BBC9B21EE10FE900818DD9 /* 带文字选择评价的星星等级 */ = {
@@ -244,6 +261,7 @@
 		DCFDE64A1ED9CACB0006DCFE /* textAll */ = {
 			isa = PBXGroup;
 			children = (
+				467FB8EB1EE94A5C0057998A /* masonry布局系列 */,
 				467FB8E01EE902390057998A /* 动态高度Label */,
 				467FB8D91EE8EFC80057998A /* 用masonry写不定高cell */,
 				46BBC9E01EE1102500818DD9 /* Image */,
@@ -272,8 +290,6 @@
 				DCFDE6591ED9CACB0006DCFE /* LaunchScreen.storyboard */,
 				DCFDE65C1ED9CACB0006DCFE /* Info.plist */,
 				DCFDE64B1ED9CACB0006DCFE /* Supporting Files */,
-				467FB8E41EE902B80057998A /* AdViewController.h */,
-				467FB8E51EE902B80057998A /* AdViewController.m */,
 			);
 			path = textAll;
 			sourceTree = "<group>";
@@ -428,7 +444,7 @@
 				46BBC9F71EE6452A00818DD9 /* HXYHorizontalTextButton.m in Sources */,
 				DC1F665B1EE03BEB00B2DA20 /* HXYMyInfoView.m in Sources */,
 				DC1F66611EE0408C00B2DA20 /* drawCurve.m in Sources */,
-				467FB8E61EE902B80057998A /* AdViewController.m in Sources */,
+				467FB8EF1EE94A5C0057998A /* AdViewController.m in Sources */,
 				DCFDE6531ED9CACB0006DCFE /* ViewController.m in Sources */,
 				46BBC9D21EE10FE900818DD9 /* HXYCustomButton.m in Sources */,
 				DC33C8C61EE57CCD000858A0 /* BezierPathLearning.m in Sources */,

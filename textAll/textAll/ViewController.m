@@ -13,6 +13,7 @@
 #import "HXYMyViewController.h"
 #import "BezierPathLearning.h"
 #import "AdViewController.h"
+#import "DynamicLabelViewController.h"
 @interface ViewController ()
 
 @end
@@ -35,8 +36,17 @@
     //    [self drawCurveView];
 //    [self bezierPathLearning];
 //    [self my];
-    [self adScrollView];
+//    [self adScrollView];
+    [self dynamicLabel];
 }
+
+- (void)dynamicLabel
+{
+    DynamicLabelViewController *vc = [[DynamicLabelViewController alloc]init];
+    [self presentViewController:vc animated:YES completion:nil];
+    
+}
+
 
 - (void)adScrollView
 {
