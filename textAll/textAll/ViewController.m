@@ -12,6 +12,7 @@
 #import "drawCurve.h"
 #import "HXYMyViewController.h"
 #import "BezierPathLearning.h"
+#import "AdViewController.h"
 @interface ViewController ()
 
 @end
@@ -28,6 +29,27 @@
     HXYLog();
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    //画曲线
+    //    [self drawCurveView];
+//    [self bezierPathLearning];
+//    [self my];
+    [self adScrollView];
+}
+
+- (void)adScrollView
+{
+    AdViewController *vc = [[AdViewController alloc]init];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+- (void)my
+{
+    HXYMyViewController *vc = [[HXYMyViewController alloc]init];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
 - (void)bezierPathLearning
 {
     BezierPathLearning *bezierPathView = [[BezierPathLearning alloc]init];
@@ -37,6 +59,7 @@
         make.top.mas_equalTo(self.view).mas_offset(130);
         make.height.mas_equalTo(100);
     }];
+    
 }
 
 //BezierPath画图
@@ -51,17 +74,6 @@
     //        make.height.mas_equalTo(100);
     //    }];
 }
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    //画曲线
-    //    [self drawCurveView];
-//    [self bezierPathLearning];
-    
-    HXYMyViewController *vc = [[HXYMyViewController alloc]init];
-    [self presentViewController:vc animated:YES completion:nil];
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

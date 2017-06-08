@@ -9,6 +9,7 @@
 #ifndef Macro_h
 #define Macro_h
 
+#import <Masonry.h>
 #define WEAKSELF typeof(self) __weak weakSelf = self;
 #define STRONGSELF typeof(weakSelf) __strong strongSelf = weakSelf;
 #ifdef DEBUG
@@ -42,6 +43,10 @@
 #define UIColorAlphaFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:.5]
 #define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 #define RGB(r,g,b) RGBA(r,g,b,1.0f)
+
+#define hxytest(type,fontSize) [UIFont fontWithName:@"PingFangSC-"#type size:fontSize]
+//font
+#define PFFONT(type,fontSize) [UIFont fontWithName:@"PingFangSC-"#type size:fontSize]?[UIFont fontWithName:@"PingFangSC-"#type size:fontSize]: [UIFont fontWithName:@"PingFang-SC-"#type size:fontSize]
 
 // It is clear that this is height of screen.
 #define ScreenHeight [[UIScreen mainScreen] bounds].size.height

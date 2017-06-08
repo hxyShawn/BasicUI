@@ -9,4 +9,5 @@ target 'textAll' do
 pod 'Masonry'
 pod 'TTTAttributedLabel'
 pod 'Reveal-SDK', '~> 7', :configurations => ['Debug']
+pod 'UITableView+FDTemplateLayoutCell'
 end

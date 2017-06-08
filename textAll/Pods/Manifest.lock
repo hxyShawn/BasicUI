@@ -2,17 +2,20 @@ PODS:
   - Masonry (1.0.2)
   - Reveal-SDK (7)
   - TTTAttributedLabel (2.0.0)
+  - UITableView+FDTemplateLayoutCell (1.6)
 
 DEPENDENCIES:
   - Masonry
   - Reveal-SDK (~> 7)
   - TTTAttributedLabel
+  - UITableView+FDTemplateLayoutCell
 
 SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   Reveal-SDK: 564657bc66c93d2718b1c0121cdebe99d354ddab
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
 
-PODFILE CHECKSUM: 283f48a4d9f5fb6ba7d26bee8031d8edf154103c
+PODFILE CHECKSUM: 34bcdccdebe73ae02b5e8903a0c403d1ed555670
 
 COCOAPODS: 1.1.1
