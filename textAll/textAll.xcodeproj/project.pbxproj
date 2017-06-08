@@ -10,8 +10,8 @@
 		467FB8D81EE7AA360057998A /* HXYMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FB8D71EE7AA360057998A /* HXYMyViewController.m */; };
 		467FB8DC1EE8F0170057998A /* AlterableHeightCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FB8DB1EE8F0170057998A /* AlterableHeightCellViewController.m */; };
 		467FB8DF1EE8F0230057998A /* AlterableHeightCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FB8DE1EE8F0230057998A /* AlterableHeightCellTableViewCell.m */; };
-		467FB8E31EE902600057998A /* DynamicLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FB8E21EE902600057998A /* DynamicLabelViewController.m */; };
 		467FB8EF1EE94A5C0057998A /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FB8EE1EE94A5C0057998A /* AdViewController.m */; };
+		467FB8F31EE950490057998A /* DynamicLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FB8F21EE950490057998A /* DynamicLabelViewController.m */; };
 		46BBC9D21EE10FE900818DD9 /* HXYCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BBC9B41EE10FE900818DD9 /* HXYCustomButton.m */; };
 		46BBC9D31EE10FE900818DD9 /* HXYEstimateStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BBC9B61EE10FE900818DD9 /* HXYEstimateStarView.m */; };
 		46BBC9DF1EE10FE900818DD9 /* HXYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BBC9D11EE10FE900818DD9 /* HXYTextView.m */; };
@@ -55,10 +55,10 @@
 		467FB8DB1EE8F0170057998A /* AlterableHeightCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlterableHeightCellViewController.m; sourceTree = "<group>"; };
 		467FB8DD1EE8F0230057998A /* AlterableHeightCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlterableHeightCellTableViewCell.h; sourceTree = "<group>"; };
 		467FB8DE1EE8F0230057998A /* AlterableHeightCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlterableHeightCellTableViewCell.m; sourceTree = "<group>"; };
-		467FB8E11EE902600057998A /* DynamicLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicLabelViewController.h; sourceTree = "<group>"; };
-		467FB8E21EE902600057998A /* DynamicLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicLabelViewController.m; sourceTree = "<group>"; };
 		467FB8ED1EE94A5C0057998A /* AdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdViewController.h; sourceTree = "<group>"; };
 		467FB8EE1EE94A5C0057998A /* AdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
+		467FB8F11EE950490057998A /* DynamicLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicLabelViewController.h; sourceTree = "<group>"; };
+		467FB8F21EE950490057998A /* DynamicLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicLabelViewController.m; sourceTree = "<group>"; };
 		46BBC9B31EE10FE900818DD9 /* HXYCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXYCustomButton.h; sourceTree = "<group>"; };
 		46BBC9B41EE10FE900818DD9 /* HXYCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXYCustomButton.m; sourceTree = "<group>"; };
 		46BBC9B51EE10FE900818DD9 /* HXYEstimateStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXYEstimateStarView.h; sourceTree = "<group>"; };
@@ -130,18 +130,10 @@
 			path = "用masonry写不定高cell";
 			sourceTree = "<group>";
 		};
-		467FB8E01EE902390057998A /* 动态高度Label */ = {
-			isa = PBXGroup;
-			children = (
-				467FB8E11EE902600057998A /* DynamicLabelViewController.h */,
-				467FB8E21EE902600057998A /* DynamicLabelViewController.m */,
-			);
-			path = "动态高度Label";
-			sourceTree = "<group>";
-		};
 		467FB8EB1EE94A5C0057998A /* masonry布局系列 */ = {
 			isa = PBXGroup;
 			children = (
+				467FB8F01EE950490057998A /* 动态高度Label */,
 				467FB8EC1EE94A5C0057998A /* 简单的masonry布局scrollView */,
 			);
 			path = "masonry布局系列";
@@ -154,6 +146,15 @@
 				467FB8EE1EE94A5C0057998A /* AdViewController.m */,
 			);
 			path = "简单的masonry布局scrollView";
+			sourceTree = "<group>";
+		};
+		467FB8F01EE950490057998A /* 动态高度Label */ = {
+			isa = PBXGroup;
+			children = (
+				467FB8F11EE950490057998A /* DynamicLabelViewController.h */,
+				467FB8F21EE950490057998A /* DynamicLabelViewController.m */,
+			);
+			path = "动态高度Label";
 			sourceTree = "<group>";
 		};
 		46BBC9B21EE10FE900818DD9 /* 带文字选择评价的星星等级 */ = {
@@ -262,7 +263,6 @@
 			isa = PBXGroup;
 			children = (
 				467FB8EB1EE94A5C0057998A /* masonry布局系列 */,
-				467FB8E01EE902390057998A /* 动态高度Label */,
 				467FB8D91EE8EFC80057998A /* 用masonry写不定高cell */,
 				46BBC9E01EE1102500818DD9 /* Image */,
 				46BBC9B21EE10FE900818DD9 /* 带文字选择评价的星星等级 */,
@@ -446,6 +446,7 @@
 				DC1F66611EE0408C00B2DA20 /* drawCurve.m in Sources */,
 				467FB8EF1EE94A5C0057998A /* AdViewController.m in Sources */,
 				DCFDE6531ED9CACB0006DCFE /* ViewController.m in Sources */,
+				467FB8F31EE950490057998A /* DynamicLabelViewController.m in Sources */,
 				46BBC9D21EE10FE900818DD9 /* HXYCustomButton.m in Sources */,
 				DC33C8C61EE57CCD000858A0 /* BezierPathLearning.m in Sources */,
 				DCFDE6641ED9CF8D0006DCFE /* HXYMyTableViewCell.m in Sources */,
@@ -453,7 +454,6 @@
 				467FB8DC1EE8F0170057998A /* AlterableHeightCellViewController.m in Sources */,
 				467FB8D81EE7AA360057998A /* HXYMyViewController.m in Sources */,
 				DC1F66581EE03BA100B2DA20 /* HxyTestCellViewController.m in Sources */,
-				467FB8E31EE902600057998A /* DynamicLabelViewController.m in Sources */,
 				467FB8DF1EE8F0230057998A /* AlterableHeightCellTableViewCell.m in Sources */,
 				46BBC9D31EE10FE900818DD9 /* HXYEstimateStarView.m in Sources */,
 				DCFDE64D1ED9CACB0006DCFE /* main.m in Sources */,
