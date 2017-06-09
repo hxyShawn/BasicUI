@@ -14,6 +14,7 @@
 #import "BezierPathLearning.h"
 #import "AdViewController.h"
 #import "DynamicLabelViewController.h"
+#import "AlterableHeightCellViewController.h"
 @interface ViewController ()
 
 @end
@@ -37,7 +38,8 @@
 //    [self bezierPathLearning];
 //    [self my];
 //    [self adScrollView];
-    [self dynamicLabel];
+//    [self dynamicLabel];
+    [self dynamicCell];
 }
 
 - (void)dynamicLabel
@@ -47,6 +49,11 @@
     
 }
 
+- (void)dynamicCell
+{
+    AlterableHeightCellViewController *vc = [[AlterableHeightCellViewController alloc]init];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 - (void)adScrollView
 {

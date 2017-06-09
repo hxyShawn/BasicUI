@@ -54,6 +54,21 @@
     [containerView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.right.equalTo(lastView);
     }];
+    [self scroll];
+    
+}
+
+- (void)scroll
+{
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0 repeats:YES block:^(NSTimer * _Nonnull timer) {
+//        dispatch_sync(dispatch_get_main_queue(), ^{
+            CGFloat targetX = self.scrollView.contentOffset.x+self.scrollView.frame.size.width;
+            BOOL animated = YES;
+            [_scrollView setContentOffset:CGPointMake(targetX, 0) animated:animated];
+
+//        });
+    }];
+    [[NSRunLoop currentRunLoop]addTimer:timer forMode:NSRunLoopCommonModes];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -26,9 +26,15 @@ static NSString *cellID = @"cellid";
     tableView.dataSource =self;
     [self.view addSubview:tableView];
     [tableView registerClass:[AlterableHeightCellTableViewCell class] forCellReuseIdentifier:cellID];
-    
+    [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
 }
-
+- (void)configureCell:(AlterableHeightCellTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    
+    cell.titleStr = @"title";
+    cell.contentStr = self.arr[indexPath.row];
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -38,13 +44,14 @@ static NSString *cellID = @"cellid";
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return [tableView fd_heightForCellWithIdentifier:cellID cacheByIndexPath:indexPath configuration:^(id cell) {
-        
+        [self configureCell:cell atIndexPath:indexPath];
     }];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     AlterableHeightCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
 - (void)didReceiveMemoryWarning {

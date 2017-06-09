@@ -10,4 +10,6 @@
 
 @interface AlterableHeightCellTableViewCell : UITableViewCell
 @property (nonatomic, copy) NSDictionary *data;
+@property (nonatomic, copy) NSString *titleStr;
+@property (nonatomic, copy) NSString  *contentStr;
 @end

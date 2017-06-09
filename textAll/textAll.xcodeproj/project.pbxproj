@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4677CC7C1EEA53C9007B9B53 /* dogebread.png in Resources */ = {isa = PBXBuildFile; fileRef = 4677CC7B1EEA53C9007B9B53 /* dogebread.png */; };
+		4677CC7E1EEA53FA007B9B53 /* doge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4677CC7D1EEA53FA007B9B53 /* doge@2x.png */; };
 		467FB8D81EE7AA360057998A /* HXYMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FB8D71EE7AA360057998A /* HXYMyViewController.m */; };
 		467FB8DC1EE8F0170057998A /* AlterableHeightCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FB8DB1EE8F0170057998A /* AlterableHeightCellViewController.m */; };
 		467FB8DF1EE8F0230057998A /* AlterableHeightCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FB8DE1EE8F0230057998A /* AlterableHeightCellTableViewCell.m */; };
@@ -49,6 +51,8 @@
 /* Begin PBXFileReference section */
 		1C30AEBB22BFDC2BDFE7C21E /* Pods-textAll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-textAll.debug.xcconfig"; path = "Pods/Target Support Files/Pods-textAll/Pods-textAll.debug.xcconfig"; sourceTree = "<group>"; };
 		365083BED8CD77AFA88AE881 /* Pods-textAll.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-textAll.release.xcconfig"; path = "Pods/Target Support Files/Pods-textAll/Pods-textAll.release.xcconfig"; sourceTree = "<group>"; };
+		4677CC7B1EEA53C9007B9B53 /* dogebread.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dogebread.png; sourceTree = "<group>"; };
+		4677CC7D1EEA53FA007B9B53 /* doge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "doge@2x.png"; sourceTree = "<group>"; };
 		467FB8D61EE7AA360057998A /* HXYMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXYMyViewController.h; sourceTree = "<group>"; };
 		467FB8D71EE7AA360057998A /* HXYMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXYMyViewController.m; sourceTree = "<group>"; };
 		467FB8DA1EE8F0170057998A /* AlterableHeightCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlterableHeightCellViewController.h; sourceTree = "<group>"; };
@@ -180,6 +184,8 @@
 		46BBC9E01EE1102500818DD9 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				4677CC7D1EEA53FA007B9B53 /* doge@2x.png */,
+				4677CC7B1EEA53C9007B9B53 /* dogebread.png */,
 				46BBCA011EE6772000818DD9 /* 个人 */,
 				46BBC9F81EE676ED00818DD9 /* 评价 */,
 			);
@@ -365,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCFDE65B1ED9CACB0006DCFE /* LaunchScreen.storyboard in Resources */,
+				4677CC7C1EEA53C9007B9B53 /* dogebread.png in Resources */,
 				46BBC9FF1EE676EE00818DD9 /* estimateUnSelected.png in Resources */,
 				46BBCA001EE676EE00818DD9 /* estimateUnSelected@2x.png in Resources */,
 				46BBCA191EE6779500818DD9 /* 礼物.png in Resources */,
@@ -380,6 +387,7 @@
 				46BBCA041EE6772000818DD9 /* my_info_curve.png in Resources */,
 				46BBC9FE1EE676EE00818DD9 /* estimateSelected@2x.png in Resources */,
 				46BBC9FD1EE676EE00818DD9 /* estimateSelected.png in Resources */,
+				4677CC7E1EEA53FA007B9B53 /* doge@2x.png in Resources */,
 				46BBCA141EE6779500818DD9 /* me-recive.png in Resources */,
 				46BBCA161EE6779500818DD9 /* me-ticket.png in Resources */,
 				DCFDE6561ED9CACB0006DCFE /* Main.storyboard in Resources */,

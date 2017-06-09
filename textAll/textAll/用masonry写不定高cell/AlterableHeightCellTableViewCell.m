@@ -20,7 +20,7 @@
 {
     self =[super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        
+        [self initUI];
     }
     return self;
 }
@@ -31,26 +31,39 @@
     [self.contentView addSubview:self.icon];
     [self.contentView addSubview:self.titleLabel];
     [self.contentView addSubview:self.contentLabel];
+    
     [self.icon mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_offset(self.contentView).offset(padding);
-        make.size.mas_offset(CGSizeMake(40, 40));
-        make.top.mas_offset(self.contentLabel).offset(space);
+        make.left.mas_equalTo(self.contentView.mas_left).offset(padding);
+        make.right.mas_equalTo(self.contentView.mas_right).offset(-padding);
+        make.height.mas_equalTo(40);
+        make.top.mas_equalTo(self.contentView).offset(space);
     }];
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_offset(self.contentView).offset(padding);
-        make.right.mas_offset(self.contentView).offset(-padding);
-        make.top.mas_offset(self.icon.mas_bottom).offset(space);
-        make.height.mas_offset(20);
+        make.left.mas_equalTo(self.contentView).offset(padding);
+        make.right.mas_equalTo(self.contentView).offset(-padding);
+        make.top.mas_equalTo(self.icon.mas_bottom).offset(space).with.priority(751);
+        make.height.mas_equalTo(20);
     }];
-//    self.contentLabel.preferredMaxLayoutWidth
+    self.contentLabel.preferredMaxLayoutWidth = ScreenWidth - padding *2;
     [self.contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_offset(self.contentView).offset(padding);
-        make.right.mas_offset(self.contentView).offset(-padding);
-        make.top.mas_offset(self.titleLabel.mas_bottom).offset(space);
-        make.bottom.mas_offset(self.contentView.mas_bottom).offset(-space);
+        make.left.mas_equalTo(self.contentView).offset(padding);
+        make.right.mas_equalTo(self.contentView).offset(-padding);
+        make.top.mas_equalTo(self.titleLabel.mas_bottom).offset(space);
+        make.bottom.mas_equalTo(self.contentView.mas_bottom).offset(-space).with.priority(749);
     }];
 }
 
+
+- (void)setTitleStr:(NSString *)titleStr
+{
+    _titleStr = titleStr;
+    self.titleLabel.text = titleStr;
+}
+- (void)setContentStr:(NSString *)contentStr
+{
+    _contentStr = contentStr;
+    self.contentLabel.text = contentStr;
+}
 - (void)setData:(NSDictionary *)data
 {
     _data = data;
@@ -61,6 +74,7 @@
 {
     if (!_icon) {
         _icon = [[UIImageView alloc]init];
+        _icon.image = [UIImage imageNamed:@"doge"];
     }
     return _icon;
 }
@@ -68,6 +82,7 @@
 {
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc]init];
+        _titleLabel.numberOfLines = 0;
     }
     return _titleLabel;
 }
@@ -75,6 +90,7 @@
 {
     if (!_contentLabel) {
         _contentLabel = [[UILabel alloc]init];
+        _contentLabel.numberOfLines = 0;
     }
     return _contentLabel;
 }
