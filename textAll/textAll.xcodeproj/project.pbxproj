@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		462C4EB01EEF820F0019E518 /* TestPriorityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 462C4EAF1EEF820F0019E518 /* TestPriorityViewController.m */; };
+		463ADD221EF110790062422D /* HXYAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 463ADD211EF110790062422D /* HXYAlertViewController.m */; };
 		4677CC7C1EEA53C9007B9B53 /* dogebread.png in Resources */ = {isa = PBXBuildFile; fileRef = 4677CC7B1EEA53C9007B9B53 /* dogebread.png */; };
 		4677CC7E1EEA53FA007B9B53 /* doge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4677CC7D1EEA53FA007B9B53 /* doge@2x.png */; };
 		467FB8D81EE7AA360057998A /* HXYMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 467FB8D71EE7AA360057998A /* HXYMyViewController.m */; };
@@ -51,6 +53,10 @@
 /* Begin PBXFileReference section */
 		1C30AEBB22BFDC2BDFE7C21E /* Pods-textAll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-textAll.debug.xcconfig"; path = "Pods/Target Support Files/Pods-textAll/Pods-textAll.debug.xcconfig"; sourceTree = "<group>"; };
 		365083BED8CD77AFA88AE881 /* Pods-textAll.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-textAll.release.xcconfig"; path = "Pods/Target Support Files/Pods-textAll/Pods-textAll.release.xcconfig"; sourceTree = "<group>"; };
+		462C4EAE1EEF820F0019E518 /* TestPriorityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPriorityViewController.h; sourceTree = "<group>"; };
+		462C4EAF1EEF820F0019E518 /* TestPriorityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPriorityViewController.m; sourceTree = "<group>"; };
+		463ADD201EF110790062422D /* HXYAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXYAlertViewController.h; sourceTree = "<group>"; };
+		463ADD211EF110790062422D /* HXYAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXYAlertViewController.m; sourceTree = "<group>"; };
 		4677CC7B1EEA53C9007B9B53 /* dogebread.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dogebread.png; sourceTree = "<group>"; };
 		4677CC7D1EEA53FA007B9B53 /* doge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "doge@2x.png"; sourceTree = "<group>"; };
 		467FB8D61EE7AA360057998A /* HXYMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXYMyViewController.h; sourceTree = "<group>"; };
@@ -123,6 +129,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		462C4EAD1EEF81F70019E518 /* 测试优先级,压缩阻力,拉伸阻力 */ = {
+			isa = PBXGroup;
+			children = (
+				462C4EAE1EEF820F0019E518 /* TestPriorityViewController.h */,
+				462C4EAF1EEF820F0019E518 /* TestPriorityViewController.m */,
+			);
+			path = "测试优先级,压缩阻力,拉伸阻力";
+			sourceTree = "<group>";
+		};
+		463ADD1F1EF110540062422D /* 弹出框 */ = {
+			isa = PBXGroup;
+			children = (
+				463ADD201EF110790062422D /* HXYAlertViewController.h */,
+				463ADD211EF110790062422D /* HXYAlertViewController.m */,
+			);
+			path = "弹出框";
+			sourceTree = "<group>";
+		};
+		467AD3671EF139B300484253 /* DXPopView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DXPopView;
+			sourceTree = "<group>";
+		};
 		467FB8D91EE8EFC80057998A /* 用masonry写不定高cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +168,7 @@
 		467FB8EB1EE94A5C0057998A /* masonry布局系列 */ = {
 			isa = PBXGroup;
 			children = (
+				462C4EAD1EEF81F70019E518 /* 测试优先级,压缩阻力,拉伸阻力 */,
 				467FB8F01EE950490057998A /* 动态高度Label */,
 				467FB8EC1EE94A5C0057998A /* 简单的masonry布局scrollView */,
 			);
@@ -268,6 +300,8 @@
 		DCFDE64A1ED9CACB0006DCFE /* textAll */ = {
 			isa = PBXGroup;
 			children = (
+				467AD3671EF139B300484253 /* DXPopView */,
+				463ADD1F1EF110540062422D /* 弹出框 */,
 				467FB8EB1EE94A5C0057998A /* masonry布局系列 */,
 				467FB8D91EE8EFC80057998A /* 用masonry写不定高cell */,
 				46BBC9E01EE1102500818DD9 /* Image */,
@@ -451,6 +485,7 @@
 			files = (
 				46BBC9F71EE6452A00818DD9 /* HXYHorizontalTextButton.m in Sources */,
 				DC1F665B1EE03BEB00B2DA20 /* HXYMyInfoView.m in Sources */,
+				462C4EB01EEF820F0019E518 /* TestPriorityViewController.m in Sources */,
 				DC1F66611EE0408C00B2DA20 /* drawCurve.m in Sources */,
 				467FB8EF1EE94A5C0057998A /* AdViewController.m in Sources */,
 				DCFDE6531ED9CACB0006DCFE /* ViewController.m in Sources */,
@@ -461,6 +496,7 @@
 				DCFDE6501ED9CACB0006DCFE /* AppDelegate.m in Sources */,
 				467FB8DC1EE8F0170057998A /* AlterableHeightCellViewController.m in Sources */,
 				467FB8D81EE7AA360057998A /* HXYMyViewController.m in Sources */,
+				463ADD221EF110790062422D /* HXYAlertViewController.m in Sources */,
 				DC1F66581EE03BA100B2DA20 /* HxyTestCellViewController.m in Sources */,
 				467FB8DF1EE8F0230057998A /* AlterableHeightCellTableViewCell.m in Sources */,
 				46BBC9D31EE10FE900818DD9 /* HXYEstimateStarView.m in Sources */,

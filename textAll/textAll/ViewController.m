@@ -15,6 +15,8 @@
 #import "AdViewController.h"
 #import "DynamicLabelViewController.h"
 #import "AlterableHeightCellViewController.h"
+#import "TestPriorityViewController.h"
+#import "HXYAlertViewController.h"
 @interface ViewController ()
 
 @end
@@ -39,9 +41,26 @@
 //    [self my];
 //    [self adScrollView];
 //    [self dynamicLabel];
-    [self dynamicCell];
+//    [self dynamicCell];
+//    [self testPriority];
+    [self HXYAlertViewController];
 }
 
+- (void)HXYAlertViewController
+{
+    self.definesPresentationContext = YES;
+    HXYAlertViewController *vc = [[HXYAlertViewController alloc]init];
+    vc.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
+    vc.modalPresentationStyle = UIModalPresentationCurrentContext;
+    vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+- (void)testPriority
+{
+    TestPriorityViewController *vc = [[TestPriorityViewController alloc]init];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 - (void)dynamicLabel
 {
     DynamicLabelViewController *vc = [[DynamicLabelViewController alloc]init];
