@@ -36,7 +36,6 @@
 		46BBCA191EE6779500818DD9 /* 礼物.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BBCA0F1EE6779500818DD9 /* 礼物.png */; };
 		46BBCA1A1EE6779500818DD9 /* 许愿星_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BBCA101EE6779500818DD9 /* 许愿星_icon.png */; };
 		46BBCA1C1EE6876E00818DD9 /* my_info_middleCurve.png in Resources */ = {isa = PBXBuildFile; fileRef = 46BBCA1B1EE6876E00818DD9 /* my_info_middleCurve.png */; };
-		9FAD8FCE7DCE896B9328AE71 /* libPods-textAll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6999D28ABEBBA574FBA531 /* libPods-textAll.a */; };
 		DC1F66581EE03BA100B2DA20 /* HxyTestCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1F66571EE03BA100B2DA20 /* HxyTestCellViewController.m */; };
 		DC1F665B1EE03BEB00B2DA20 /* HXYMyInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1F665A1EE03BEB00B2DA20 /* HXYMyInfoView.m */; };
 		DC1F66611EE0408C00B2DA20 /* drawCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1F66601EE0408C00B2DA20 /* drawCurve.m */; };
@@ -48,6 +47,7 @@
 		DCFDE6581ED9CACB0006DCFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCFDE6571ED9CACB0006DCFE /* Assets.xcassets */; };
 		DCFDE65B1ED9CACB0006DCFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFDE6591ED9CACB0006DCFE /* LaunchScreen.storyboard */; };
 		DCFDE6641ED9CF8D0006DCFE /* HXYMyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFDE6631ED9CF8D0006DCFE /* HXYMyTableViewCell.m */; };
+		E7CD257FC33007B60161307B /* Pods_textAll.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6156D5A9A04864CA16C79CC9 /* Pods_textAll.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,7 +94,7 @@
 		46BBCA101EE6779500818DD9 /* 许愿星_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "许愿星_icon.png"; sourceTree = "<group>"; };
 		46BBCA1B1EE6876E00818DD9 /* my_info_middleCurve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = my_info_middleCurve.png; sourceTree = "<group>"; };
 		46BBCA1D1EE6941900818DD9 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
-		4D6999D28ABEBBA574FBA531 /* libPods-textAll.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-textAll.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6156D5A9A04864CA16C79CC9 /* Pods_textAll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_textAll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1F66561EE03BA100B2DA20 /* HxyTestCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HxyTestCellViewController.h; sourceTree = "<group>"; };
 		DC1F66571EE03BA100B2DA20 /* HxyTestCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HxyTestCellViewController.m; sourceTree = "<group>"; };
 		DC1F66591EE03BEB00B2DA20 /* HXYMyInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXYMyInfoView.h; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FAD8FCE7DCE896B9328AE71 /* libPods-textAll.a in Frameworks */,
+				E7CD257FC33007B60161307B /* Pods_textAll.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +274,7 @@
 		AA66E5503084C376609F564F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4D6999D28ABEBBA574FBA531 /* libPods-textAll.a */,
+				6156D5A9A04864CA16C79CC9 /* Pods_textAll.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
